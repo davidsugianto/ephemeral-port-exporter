@@ -1,0 +1,9 @@
+services:
+  ephemeral-port-exporter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ephemeral-port-exporter
+    ports:
+      - "2112:2112"
+    restart: unless-stopped

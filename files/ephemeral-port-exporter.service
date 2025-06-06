@@ -1,0 +1,18 @@
+[Unit]
+Description=Ephemeral Port Exporter
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/ephemeral-port-exporter
+Restart=always
+RestartSec=5
+User=nobody
+Group=nogroup
+StandardOutput=journal
+StandardError=journal
+# Optional: set working directory or environment
+WorkingDirectory=/
+Environment=PORT=2112
+
+[Install]
+WantedBy=multi-user.target
