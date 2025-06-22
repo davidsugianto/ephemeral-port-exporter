@@ -64,7 +64,7 @@ ephemeral_ports_used 1
 ### 🔧 Build & Run
 
 ```
-git clone https://github.com/yourname/ephemeral-port-exporter.git
+git clone https://github.com/davidsugianto/ephemeral-port-exporter.git
 cd ephemeral-port-exporter
 
 make deps
